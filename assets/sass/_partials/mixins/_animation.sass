@@ -1,0 +1,34 @@
+=keyframes($animation-name)
+  @-webkit-keyframes #{$animation-name}
+    @content
+
+  @-moz-keyframes #{$animation-name}
+    @content
+
+  @-ms-keyframes #{$animation-name}
+    @content
+
+  @-o-keyframes #{$animation-name}
+    @content
+
+  @keyframes #{$animation-name}
+    @content
+
+=animation($str)
+  -webkit-animation: #{$str}
+  -moz-animation: #{$str}
+  -ms-animation: #{$str}
+  -o-animation: #{$str}
+  animation: #{$str}
+
+=animation-delay($delay)
+  -webkit-animation-delay: $delay
+  -moz-animation-delay: $delay
+  -o-animation-delay: $delay
+  animation-delay: $delay
+
+=animation-duration($duration)
+  -webkit-animation-duration: $duration
+  -moz-animation-duration: $duration
+  -o-animation-duration: $duration
+  animation-duration: $duration
